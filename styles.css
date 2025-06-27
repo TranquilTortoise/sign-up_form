@@ -101,7 +101,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .intro,
-.sign-up_form,
 .bottom_container {
     padding: 5em;
 }
@@ -114,6 +113,32 @@ h1, h2, h3, h4, h5, h6 {
 
 .sign-up_form {
     background-color: var(--white-clr);
+    padding: 2em 5em 5em 5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.form_title {
+    margin-bottom: 1em;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.form_group {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(50% - 0.5 em);
+    min-width: 200px;
+}
+
+label {
+    font-size: 0.65em;
+    display: block;
+    margin-bottom: 0.25em;
 }
 
 input {
@@ -124,15 +149,20 @@ input {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    border: none;
     border-radius: 0.2em;
+    outline: rgb(0, 0, 0, 0.3) solid 1px;
+
 }
 
 input:focus {
-    border: 10px solid blue;
+    outline: none;
+    outline: 1px solid blue;
 }
 
-#confirm_password {
-    border: red solid 1px;
+#confirm_password,
+#user_password {
+    outline: red solid 1px;
 }
 
 button {
