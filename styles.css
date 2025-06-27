@@ -9,6 +9,9 @@
 body {
     line-height: calc(1em + 0.5rem);
     -webkit-font-smoothing: antialiased;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
 }
 
 img {
@@ -31,4 +34,18 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
+}
+
+.panel {
+    width: 30%;
+}
+
+.main {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    position: absolute;
 }
