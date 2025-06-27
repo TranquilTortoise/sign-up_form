@@ -1,3 +1,17 @@
+@font-face {
+    font-family: "norse";
+    src:
+        url("./assets/fonts/norse-bold-webfont.woff2") format("woff2"),
+        url("./assets/fonts/norse-bold-webfont.woff") format("woff");
+        font-weight: bold;
+        font-style: normal;
+}
+
+:root {
+    --olive-clr: #596D48;
+    --black-clr: black;
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -38,6 +52,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .panel {
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .main {
@@ -46,6 +63,35 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
 }
 
+.logo_container {
+    background: rgb(0, 0, 0, 0.4);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    margin-top: 20em;
+}
+
 .logo {
+    height: 6em;
+    width: auto;
+}
+
+.odin_text {
+    font-family: "norse";
+    font-size: 4em;
+    color: white;
+}
+
+.attribution {
+    text-align: center;
+    color: white;
+}
+
+.background_img {
     position: absolute;
+    height: 100vh;
+    width: 30%;
+    z-index: -1;
 }
